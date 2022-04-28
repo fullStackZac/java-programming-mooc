@@ -20,6 +20,7 @@ public class NullPointerExceptionProgram {
             System.out.println(lines.get(index));
             index++;
         }
-
+        lines = null;
+        System.out.println(lines.size());
     }
 }
