@@ -16,4 +16,12 @@ public class SimpleDictionary {
     public void add(String word, String translation) {
         this.translations.put(word, translation);
     }
+    
+    public boolean isEmpty() {
+        if(this.translations.isEmpty()) {
+            return true;
+        }else {
+            return false;
+        }
+    }
 }
