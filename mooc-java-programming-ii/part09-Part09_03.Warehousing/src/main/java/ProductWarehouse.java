@@ -10,23 +10,23 @@
  */
 public class ProductWarehouse extends Warehouse {
     
-    private String name;
+    private String productName;
     
-    public ProductWarehouse(String name, double capacity) {
+    public ProductWarehouse(String productName, double capacity) {
         super(capacity);
-        this.name = name;
+        this.productName = productName;
     }
     
     public String getName() {
-        return this.name;
+        return this.productName;
     }
     
     public void setName(String newName) {
-        this.name = newName;
+        this.productName = newName;
     }
     
     @Override
     public String toString() {
-        return this.name + ": " + super.toString();
+        return this.productName + ": " + super.toString();
     }
 }
